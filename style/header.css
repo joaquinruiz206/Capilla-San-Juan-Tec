@@ -1,0 +1,60 @@
+header{
+    background-color: aquamarine;
+    position: relative;
+    width: 100%;
+    height: 90px;
+}
+
+.navegacion{
+
+    right: 100%;
+    bottom: -128px;
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    padding: 20px 200px;
+    position: absolute;
+    background-color: red;
+ 
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.icon{
+    right: 0;
+    padding: 30px;
+    position: absolute;
+    cursor: pointer;
+}
+
+
+@media (min-width:580px){
+    .icon{
+        display: none;
+    }
+
+    ul{
+        display: flex;
+    }
+
+    li{
+        display: inline;
+        padding: 10px;
+        margin: 30px;
+    }
+
+    .navegacion{
+        top: 0;
+        width: 100%;
+        background-color: rgb(85, 85, 160);
+        height: 90px;
+    }
+}
